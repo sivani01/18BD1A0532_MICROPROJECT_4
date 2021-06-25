@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome to Telangana Covid E-Portal</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="/static/plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="/static/dist/css/adminlte.min.css">
+<style>
+p{
+color: FireBrick;
+font-size: 150%;
+
+}
+  .center_div{
+    margin: 0 auto;
+    width:80%
+}
+body{
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+background-color: LightBlue;
+}
+</style>
+</head>
+<body>
+<center><img src="/static/logo.jpg" width="280px" height="220px">
+<h1>E-Pass Application</h1><br>
+            <p>Please fill down the details given below for the e-pass application process. Kindly
+            check all the details before submitting.</p>
+            <p> Note: A person can apply again after <strong>3 days</strong> if the application is
+            not approved.</p></center>
+<section class="content center_div" style="margin:auto;">
+      <div class="container-fluid center_div">
+        <div class="row">
+          <!-- left column -->
+          <div class="col-md-12">
+            <!-- general form elements -->
+            <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Application Form</h3>
+              </div>
+              <!-- /.card-header -->
+              <!-- form start -->
+              <form method="POST" action="/login">
+                <div class="card-body">
+
+                  <div class="form-group">
+                    <label>First Name:</label>
+                    <input type="text" class="form-control" name="fname" placeholder="Enter first name">
+                  </div>
+
+                  <div class="form-group">
+                    <label>Last Name:</label>
+                    <input type="text" class="form-control" name="lname" placeholder="Enter last name">
+                  </div>
+
+                    <div class="form-group">
+                    <label>Email:</label>
+                    <input type="text" class="form-control" name="mail" placeholder="Enter Email-ID">
+                  </div>
+
+                    <div class="form-group">
+                    <label>State:</label>
+                    <input type="text" class="form-control" name="state" placeholder="Enter State">
+                  </div>
+
+                    <div class="form-group">
+                    <label>Source:</label>
+                    <input type="text" class="form-control" name="source" placeholder="Enter source">
+                  </div>
+
+                    <div class="form-group">
+                    <label>Destination state:</label>
+                    <input type="text" class="form-control" name="dstate" placeholder="Enter destination state">
+                  </div>
+
+                  <div class="form-group">
+                    <label>Destination:</label>
+                    <input type="text" class="form-control" name="destination" placeholder="Enter destination">
+                  </div>
+
+                  <div class="form-group">
+                    <label>Aadhar Number:</label>
+                    <input type="text" class="form-control" name="aadhar" placeholder="Enter Aadhar number">
+                  </div>
+
+
+                  <div class="form-group">
+                    <label>Phone number:</label>
+                    <input type="number" class="form-control" name="phoneNumber" placeholder="Enter phone number">
+                  </div>
+
+
+                  <div class="form-group">
+                    <label>Date Of Travel:</label>
+                    <input type="date" class="form-control" name="date">
+                  </div>
+                  <h2>Declaration:</h2>
+                  <p>  By clicking Submit, I hereby declare that all the information mentioned above
+                    is free true to the best of my knowledge and I bear responsibility for any deviation from them at any later stage. </p>
+
+                <div class="card-footer">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+</body>
+</html>
